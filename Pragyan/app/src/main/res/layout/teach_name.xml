@@ -7,7 +7,7 @@
     android:background="@drawable/rsz_home_bg">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/text_display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="My name is......"

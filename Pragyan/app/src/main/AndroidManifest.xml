@@ -28,9 +28,13 @@
         <activity android:name=".internet.IntroductionScreen">
         </activity>
         <activity android:name=".HomeGrid">
+
+        </activity>
+        <activity android:name=".ChooseAvatar">
             <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
 
         </activity>
+        <activity android:name=".english.TeachName"></activity>
 </application>
 
 </manifest>
