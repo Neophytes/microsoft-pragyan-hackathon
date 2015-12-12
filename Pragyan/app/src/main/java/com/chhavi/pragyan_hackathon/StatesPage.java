@@ -48,7 +48,7 @@ public class StatesPage extends AppCompatActivity {
         btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
 
         // hide the action bar
-        getActionBar().hide();
+       // getActionBar().hide();
 
         btnSpeak.setOnClickListener(new View.OnClickListener() {
 
