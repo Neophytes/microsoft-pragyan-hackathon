@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Imagnine you want to play with your friend but he/she lives far off from your house.          Now imagine there is a tunnel below your house and theirs connecting them.           These tunnels are magical so that you are transported to their place as soon as you step in the tunnel, you can share your toys and talk through this tunnel as well.            Now imagine all your friends and the entire world even has this tunnel below their houses. Internet is that tunnel!"
+        android:id="@+id/english_text"
+        android:layout_gravity="center_horizontal" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/children01_thumb"
+        android:id="@+id/tut_image"
+        android:visibility="gone"
+        android:layout_marginBottom="127dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
