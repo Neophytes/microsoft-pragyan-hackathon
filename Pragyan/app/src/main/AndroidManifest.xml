@@ -37,6 +37,7 @@
         <activity android:name=".english.TeachName"></activity>
         <activity android:name=".StateDetail"
            android:theme="@style/Theme.Transparent"></activity>
+        <activity android:name=".world.WorldMap"></activity>
 
 </application>
 

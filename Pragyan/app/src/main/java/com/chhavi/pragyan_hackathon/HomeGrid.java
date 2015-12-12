@@ -8,6 +8,7 @@ import android.widget.ImageButton;
 
 import com.chhavi.pragyan_hackathon.english.hello_screen;
 import com.chhavi.pragyan_hackathon.internet.IntroductionScreen;
+import com.chhavi.pragyan_hackathon.world.WorldMap;
 
 /**
  * Created by chhavi on 12/12/15.
@@ -60,6 +61,13 @@ public class HomeGrid extends AppCompatActivity{
                 Intent i = new Intent(HomeGrid.this, AboutUs.class);
                 startActivity(i);
 
+            }
+        });
+        worldOption.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(HomeGrid.this, WorldMap.class);
+                startActivity(i);
             }
         });
     }
