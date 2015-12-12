@@ -20,9 +20,8 @@ import java.util.Locale;
 public class hello_screen extends AppCompatActivity implements
         TextToSpeech.OnInitListener {
     EditText take_name;
-    TextView display_name;
     Button submit_button;
-    String name;
+    public static String name;
     String textToSpeak;
     TextToSpeech textToSpeech;
 
@@ -40,7 +39,6 @@ public class hello_screen extends AppCompatActivity implements
                 take_name = (EditText)findViewById(R.id.name_input);
                 if(!take_name.getText().equals("")){
                     name = take_name.getText().toString();
-                    display_name.setText("Hello and welcome, "+name);
                     textToSpeak = "Hello and welcome " + name;
                     convertTextToSpeech(textToSpeak);
                     Thread timer = new Thread() {
@@ -55,7 +53,8 @@ public class hello_screen extends AppCompatActivity implements
                         }
                     };
                     timer.start();
-                 //   Intent i = new Intent()
+                    Intent i = new Intent(hello_screen.this, TeachName.class);
+                    startActivity(i);
 
 
 
