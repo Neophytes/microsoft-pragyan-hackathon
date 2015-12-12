@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="lightCoral">#F08080</color>
     <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
 </resources>
