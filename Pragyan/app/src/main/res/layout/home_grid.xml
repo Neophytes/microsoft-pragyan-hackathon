@@ -15,7 +15,8 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="52dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="56dp" />
+        android:layout_marginTop="56dp"
+        android:background="@android:color/transparent"/>
 
     <ImageButton
         android:layout_width="100sp"
@@ -24,7 +25,8 @@
         android:src="@drawable/india"
         android:layout_alignTop="@+id/worldOption"
         android:layout_alignLeft="@+id/englishOption"
-        android:layout_alignStart="@+id/englishOption" />
+        android:layout_alignStart="@+id/englishOption"
+        android:background="@android:color/transparent"/>
 
     <ImageButton
         android:layout_width="100sp"
@@ -33,7 +35,8 @@
         android:src="@drawable/rsz_internet"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/worldOption"
-        android:layout_alignStart="@+id/worldOption" />
+        android:layout_alignStart="@+id/worldOption"
+        android:background="@android:color/transparent"/>
 
     <ImageButton
         android:layout_width="100sp"
@@ -44,7 +47,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="65dp"
-        android:layout_marginEnd="65dp" />
+        android:layout_marginEnd="65dp"
+        android:background="@android:color/transparent"/>
 
     <ImageButton
         android:layout_width="100sp"
@@ -54,7 +58,8 @@
         android:layout_alignLeft="@+id/internetOption"
         android:layout_alignStart="@+id/internetOption"
         android:layout_marginTop="59dp"
-        android:src="@drawable/rsz_internet" />
+        android:src="@drawable/rsz_internet"
+        android:background="@android:color/transparent"/>
 
     <ImageButton
         android:layout_width="100sp"
@@ -63,7 +68,8 @@
         android:layout_alignTop="@+id/Option5"
         android:layout_alignLeft="@+id/englishOption"
         android:layout_alignStart="@+id/englishOption"
-        android:src="@drawable/rsz_internet" />
+        android:src="@drawable/rsz_internet"
+        android:background="@android:color/transparent"/>
 
 
 </RelativeLayout>

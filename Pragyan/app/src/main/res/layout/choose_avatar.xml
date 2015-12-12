@@ -35,18 +35,18 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="70dp" />
+        android:layout_marginBottom="70dp"
+        android:background="@android:color/transparent"/>
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/girlbutton"
         android:src="@drawable/girl_transparent"
+        android:background="@android:color/transparent"
         android:layout_alignTop="@+id/boybutton"
-        android:layout_toRightOf="@+id/boybutton"
-        android:layout_toEndOf="@+id/boybutton"
-        android:layout_marginLeft="50dp"
-        android:layout_marginStart="50dp" />
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -58,5 +58,29 @@
         android:textColor="@color/lightCoral"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="  Ratan"
+        android:id="@+id/textView4"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/girlbutton"
+        android:layout_alignLeft="@+id/boybutton"
+        android:layout_alignStart="@+id/boybutton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="    Lata"
+        android:id="@+id/textView11"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignLeft="@+id/girlbutton"
+        android:layout_alignStart="@+id/girlbutton" />
 
 </RelativeLayout>

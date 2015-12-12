@@ -34,6 +34,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/name_input"
+        android:textColor="@color/white"
+        android:gravity="center"
         android:layout_marginTop="50dp"
         android:layout_gravity="center_horizontal" />
 
@@ -43,6 +45,7 @@
         android:layout_height="wrap_content"
         android:background="@color/mistyRose"
         android:text="OK"
+        android:textStyle="bold"
         android:layout_marginTop="30dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"

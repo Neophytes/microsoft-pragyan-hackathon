@@ -63,7 +63,8 @@
         android:src="@drawable/girl_transparent"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/textView7"
-        android:layout_alignStart="@+id/textView7" />
+        android:layout_alignStart="@+id/textView7"
+        android:background="@android:color/transparent"/>
 
     <TextView
         android:layout_width="wrap_content"
