@@ -27,6 +27,7 @@ import java.util.Locale;
 public class StatesPage extends AppCompatActivity {
     private TextView txtSpeechInput;
     private ImageButton btnSpeak;
+    public static String state;
     private final int REQ_CODE_SPEECH_INPUT = 100;
 
     @Override
@@ -39,9 +40,14 @@ public class StatesPage extends AppCompatActivity {
 
 
         List<States> states = new ArrayList<>();
-        states.add(new States("Title here", "2nd edition"));
-        states.add(new States("Title here 2", "3nd edition"));
-        states.add(new States("Title here 3", "4nd edition"));
+        states.add(new States("Delhi","New Dehi", "North Region", "Arvind Kejriwal", "Hindi , English"));
+        states.add(new States("Karnataka", "Bengaluru", "South India", "Siddaramaiah", "Kannada"));
+        states.add(new States("Maharashtra", "Mumbai", "Western India", "Devendra Fadnavis", "Marathi"));
+        states.add(new States("Pubjab", "Chandigarh", "Northern India", "Prakash Singh Badal", "Punjabi"));
+        states.add(new States("Assam", "Dispur", "Eastern India", "Tarun Gogoi", "Assamese"));
+
+
+      //  states.add(new States("Title here 3", "4nd edition"));
         SugarRecord.saveInTx(states);
 
         txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
@@ -88,6 +94,9 @@ public class StatesPage extends AppCompatActivity {
                     ArrayList<String> result = data
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                     txtSpeechInput.setText(result.get(0));
+                    state = result.get(0);
+                    Intent i = new Intent(StatesPage.this, StateDetail.class);
+                    startActivity(i);
                 }
                 break;
             }
