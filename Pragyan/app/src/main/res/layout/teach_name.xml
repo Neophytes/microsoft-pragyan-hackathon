@@ -12,10 +12,44 @@
         android:layout_height="wrap_content"
         android:text="My name is......"
         android:textColor="@color/white"
+        android:layout_marginTop="20sp"
         android:textSize="26dp"
         android:textStyle="bold"
         android:gravity="center"
         android:layout_above="@+id/img_avatar"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Press the button below to listen"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="17sp"
+        android:id="@+id/textView7"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="सुनने के लिए नीचे दिए गए बटन दबाएं"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="17sp"
+        android:id="@+id/textView8"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageButton
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_marginTop="30sp"
+        android:id="@+id/imageButton"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/rsz_button" />
+
+
 </LinearLayout>

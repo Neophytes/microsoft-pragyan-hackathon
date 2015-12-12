@@ -56,7 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/img_avatar"
-        android:src="@drawable/girlT"
+        android:src="@drawable/girl_transparent"
         android:layout_above="@+id/linearLayout"
         android:layout_toLeftOf="@+id/linearLayout"
         android:layout_toStartOf="@+id/linearLayout" />
