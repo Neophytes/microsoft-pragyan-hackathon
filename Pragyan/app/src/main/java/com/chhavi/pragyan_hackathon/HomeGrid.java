@@ -17,6 +17,7 @@ public class HomeGrid extends AppCompatActivity{
     private ImageButton worldOption;
     private ImageButton internetOption;
     private ImageButton englishOption;
+    private ImageButton aboutUsOption;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class HomeGrid extends AppCompatActivity{
         worldOption = (ImageButton)findViewById(R.id.worldOption);
         internetOption = (ImageButton)findViewById(R.id.internetOption);
         englishOption = (ImageButton)findViewById(R.id.englishOption);
+        aboutUsOption = (ImageButton)findViewById(R.id.Option6);
 
 
         indiaOption.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +49,15 @@ public class HomeGrid extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(HomeGrid.this, IntroductionScreen.class);
+                startActivity(i);
+
+            }
+        });
+
+        aboutUsOption.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(HomeGrid.this, AboutUs.class);
                 startActivity(i);
 
             }

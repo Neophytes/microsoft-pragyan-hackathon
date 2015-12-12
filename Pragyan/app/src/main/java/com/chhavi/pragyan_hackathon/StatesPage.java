@@ -34,17 +34,17 @@ public class StatesPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.states_activity_layout);
-        States delhi = new States("Delhi", "New Delhi");
+        States delhi = new States("Delhi","Capital: New Delhi", "Location: North Region", "Chief Minister: Arvind Kejriwal", "Language(s): Hindi , English");
         delhi.save();
        // States banglore = new States()
 
 
         List<States> states = new ArrayList<>();
-        states.add(new States("Delhi","New Dehi", "North Region", "Arvind Kejriwal", "Hindi , English"));
-        states.add(new States("Karnataka", "Bengaluru", "South India", "Siddaramaiah", "Kannada"));
-        states.add(new States("Maharashtra", "Mumbai", "Western India", "Devendra Fadnavis", "Marathi"));
-        states.add(new States("Pubjab", "Chandigarh", "Northern India", "Prakash Singh Badal", "Punjabi"));
-        states.add(new States("Assam", "Dispur", "Eastern India", "Tarun Gogoi", "Assamese"));
+        states.add(new States("Delhi","Capital: New Delhi", "Location: North Region", "Chief Minister: Arvind Kejriwal", "Language(s): Hindi , English"));
+        states.add(new States("Karnataka", "Capital: Bengaluru", "Location: South India", "Chief Minister: Siddaramaiah", "Language(s): Kannada"));
+        states.add(new States("Maharashtra", "Capital: Mumbai", "Location: Western India", "Chief Minister: Devendra Fadnavis", "Language(s): Marathi"));
+        states.add(new States("Punjab", "Capital: Chandigarh", "Location: Northern India", "Chief Minister: Prakash Singh Badal", "Language(s): Punjabi"));
+        states.add(new States("Assam", "Capital: Dispur", "Location: Eastern India", "hief Minister: Tarun Gogoi", "Language(s): Assamese"));
 
 
       //  states.add(new States("Title here 3", "4nd edition"));

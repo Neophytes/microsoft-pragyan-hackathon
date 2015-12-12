@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/transparent"
    >
 
 
@@ -15,25 +18,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
-        android:layout_marginTop="100dp"
-        android:layout_marginRight="50dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/name_text" />
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="70sp"
+        android:id="@+id/name_text"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
+        android:textSize="17sp"
+        android:layout_marginLeft="70sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
         android:id="@+id/capital_text"
-        android:layout_below="@+id/name_text"
-        android:layout_alignLeft="@+id/name_text"
-        android:layout_alignStart="@+id/name_text" />
+        android:layout_below="@+id/name_text" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
         android:id="@+id/region_text"
         android:layout_below="@+id/capital_text"
         android:layout_alignLeft="@+id/capital_text"
@@ -43,6 +54,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
         android:id="@+id/chief_text"
         android:layout_below="@+id/region_text"
         android:layout_alignLeft="@+id/region_text"
@@ -52,6 +66,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
         android:id="@+id/language_text"
         android:layout_below="@+id/chief_text"
         android:layout_alignLeft="@+id/chief_text"
