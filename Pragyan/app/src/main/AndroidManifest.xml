@@ -42,6 +42,7 @@
         <activity android:name=".StateDetail"
            android:theme="@style/Theme.Transparent"></activity>
         <activity android:name=".world.WorldMap"></activity>
+        <activity android:name=".internet.EmailExplain"></activity>
 
 </application>
 

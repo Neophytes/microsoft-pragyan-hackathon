@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.chhavi.pragyan_hackathon.english.hello_screen;
+import com.chhavi.pragyan_hackathon.internet.EmailExplain;
 import com.chhavi.pragyan_hackathon.internet.IntroductionScreen;
 import com.chhavi.pragyan_hackathon.world.WorldMap;
 
@@ -49,7 +50,7 @@ public class HomeGrid extends AppCompatActivity{
         internetOption.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(HomeGrid.this, IntroductionScreen.class);
+                Intent i = new Intent(HomeGrid.this, EmailExplain.class);
                 startActivity(i);
 
             }
