@@ -1,19 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="@drawable/rsz_home_bg"
+    >
+    <ImageButton
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/worldOption"
+        android:src="@drawable/world"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="56dp" />
 
-    <ImageView
-        android:layout_width="516dp"
-        android:layout_height="match_parent"
-        android:id="@+id/background"
-        android:src="@drawable/village_scene"
-        android:layout_alignParentTop="true" />
+    <ImageButton
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/indiaOption"
+        android:src="@drawable/india"
+        android:layout_alignTop="@+id/worldOption"
+        android:layout_alignLeft="@+id/englishOption"
+        android:layout_alignStart="@+id/englishOption" />
 
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent">
-        
-    </RelativeLayout>
-</LinearLayout>
+    <ImageButton
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/internetOption"
+        android:src="@drawable/rsz_internet"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/worldOption"
+        android:layout_alignStart="@+id/worldOption" />
+
+    <ImageButton
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/englishOption"
+        android:src="@drawable/rsz_english"
+        android:layout_alignTop="@+id/internetOption"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="65dp"
+        android:layout_marginEnd="65dp" />
+
+    <ImageButton
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/Option5"
+        android:layout_below="@+id/internetOption"
+        android:layout_alignLeft="@+id/internetOption"
+        android:layout_alignStart="@+id/internetOption"
+        android:layout_marginTop="59dp"
+        android:src="@drawable/rsz_internet" />
+
+    <ImageButton
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/Option6"
+        android:layout_alignTop="@+id/Option5"
+        android:layout_alignLeft="@+id/englishOption"
+        android:layout_alignStart="@+id/englishOption"
+        android:src="@drawable/rsz_internet" />
+
+
+</RelativeLayout>
