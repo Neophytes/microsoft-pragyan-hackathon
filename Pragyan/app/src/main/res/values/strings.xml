@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Pragyan-Hackathon</string>
+    <string name="prompt_user">Choose State</string>
 </resources>

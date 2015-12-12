@@ -24,6 +24,7 @@ public class StateDetail extends AppCompatActivity {
         setContentView(R.layout.state_detail_layout);
        String statel  = "Delhi";
         statel = StatesPage.state;
+      //  if(statel.equals("Delhi"))
         States state = States.find(States.class, "name = ?", statel).get(0);
    //     getActionBar().hide()
       //  this.getActionBar().hide();

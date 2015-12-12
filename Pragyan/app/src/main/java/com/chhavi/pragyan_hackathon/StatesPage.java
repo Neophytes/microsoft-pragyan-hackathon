@@ -8,10 +8,12 @@ import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,8 +36,7 @@ public class StatesPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.states_activity_layout);
-        States delhi = new States("Delhi","Capital: New Delhi", "Location: North Region", "Chief Minister: Arvind Kejriwal", "Language(s): Hindi , English");
-        delhi.save();
+
        // States banglore = new States()
 
 
@@ -47,8 +48,52 @@ public class StatesPage extends AppCompatActivity {
         states.add(new States("Assam", "Capital: Dispur", "Location: Eastern India", "hief Minister: Tarun Gogoi", "Language(s): Assamese"));
 
 
+
       //  states.add(new States("Title here 3", "4nd edition"));
         SugarRecord.saveInTx(states);
+
+        // Spinner element
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+
+        // Spinner click listener
+      //  spinner.setOnItemSelectedListener(this);
+
+        final List<String> categories = new ArrayList<String>();
+        categories.add("asfasfaskjf asijfasfljaslkj asijoaskjlddaskjl");
+        categories.add("Delhi");
+        categories.add("Karnataka");
+        categories.add("Maharashtra");
+        categories.add("Punjab");
+        categories.add("Assam");
+      //  categories.add("Travel");
+        // Creating adapter for spinner
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
+
+        // Drop down layout style - list view with radio button
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // attaching data adapter to spinner
+        spinner.setAdapter(dataAdapter);
+        state = "";
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                state = categories.get(position);
+                if (state.equalsIgnoreCase("Delhi") || state.equalsIgnoreCase("Maharashtra") || state.equalsIgnoreCase("Assam") || state.equalsIgnoreCase("Punjab") || state.equalsIgnoreCase("Karnataka")) {
+                    Intent i = new Intent(StatesPage.this, StateDetail.class);
+                    startActivity(i);
+                } else {
+                   // Toast.makeText(StatesPage.this, "Invalid State, Please Try Again", Toast.LENGTH_LONG).show();
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+
+
+        });
 
         txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
         btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
@@ -95,8 +140,12 @@ public class StatesPage extends AppCompatActivity {
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                     txtSpeechInput.setText(result.get(0));
                     state = result.get(0);
-                    Intent i = new Intent(StatesPage.this, StateDetail.class);
-                    startActivity(i);
+                    if(state.equalsIgnoreCase("Delhi")||state.equalsIgnoreCase("Maharashtra")||state.equalsIgnoreCase("Assam")||state.equalsIgnoreCase("Punjab")||state.equalsIgnoreCase("Karnataka")) {
+                        Intent i = new Intent(StatesPage.this, StateDetail.class);
+                        startActivity(i);
+                    }else{
+                        Toast.makeText(StatesPage.this, "Invalid State, Please Try Again",Toast.LENGTH_LONG).show();
+                    }
                 }
                 break;
             }
