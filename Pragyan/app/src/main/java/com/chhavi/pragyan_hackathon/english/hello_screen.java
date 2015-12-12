@@ -32,7 +32,6 @@ public class hello_screen extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.take_name_layout);
         submit_button = (Button)findViewById(R.id.submit_button);
-        display_name = (TextView)findViewById(R.id.display_name);
         textToSpeech = new TextToSpeech(getApplicationContext(), this);
 
         submit_button.setOnClickListener(new View.OnClickListener() {

@@ -49,12 +49,4 @@
         android:id="@+id/submit_button"
         android:layout_gravity="right" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-
-        android:layout_marginTop="200dp"
-        android:id="@+id/display_name"
-        android:layout_gravity="right" />
 </LinearLayout>
