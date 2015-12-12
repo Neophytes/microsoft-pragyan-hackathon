@@ -58,7 +58,7 @@
         android:layout_alignLeft="@+id/internetOption"
         android:layout_alignStart="@+id/internetOption"
         android:layout_marginTop="59dp"
-        android:src="@drawable/rsz_internet"
+        android:src="@drawable/rsz_govt"
         android:background="@android:color/transparent"/>
 
     <ImageButton
@@ -68,8 +68,191 @@
         android:layout_alignTop="@+id/Option5"
         android:layout_alignLeft="@+id/englishOption"
         android:layout_alignStart="@+id/englishOption"
-        android:src="@drawable/rsz_internet"
+        android:src="@drawable/rsz_aboutus"
         android:background="@android:color/transparent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Know the world"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/textView12"
+        android:layout_alignLeft="@+id/worldOption"
+        android:layout_alignStart="@+id/worldOption"
+        android:layout_below="@+id/worldOption"
+        android:layout_alignRight="@+id/worldOption"
+        android:layout_alignEnd="@+id/worldOption" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=" दुनिया को पता"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/textView13"
+        android:layout_alignRight="@+id/textView12"
+        android:layout_alignEnd="@+id/textView12"
+        android:layout_below="@+id/textView12"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Our India"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/textView14"
+        android:layout_above="@+id/textView13"
+        android:layout_alignLeft="@+id/indiaOption"
+        android:layout_alignStart="@+id/indiaOption"
+        android:layout_alignRight="@+id/indiaOption"
+        android:layout_alignEnd="@+id/indiaOption" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="हमारा भारत"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/textView15"
+        android:layout_alignTop="@+id/textView13"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_alignRight="@+id/textView14"
+        android:layout_alignEnd="@+id/textView14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Internet"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/internetOption"
+        android:layout_alignLeft="@+id/internetOption"
+        android:layout_alignStart="@+id/internetOption"
+        android:layout_alignRight="@+id/internetOption"
+        android:layout_alignEnd="@+id/internetOption" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="इंटरनेट"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/textView17"
+        android:layout_alignRight="@+id/textView16"
+        android:layout_alignEnd="@+id/textView16"
+        android:layout_below="@+id/textView16"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Learn English"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/textView18"
+        android:layout_above="@+id/textView17"
+        android:layout_alignLeft="@+id/englishOption"
+        android:layout_alignStart="@+id/englishOption"
+        android:layout_alignRight="@+id/englishOption"
+        android:layout_alignEnd="@+id/englishOption" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="अंग्रेजी सीखिये"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/textView19"
+        android:layout_below="@+id/textView18"
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_alignRight="@+id/textView18"
+        android:layout_alignEnd="@+id/textView18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="About Us"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/textView20"
+        android:layout_below="@+id/Option6"
+        android:layout_alignLeft="@+id/Option6"
+        android:layout_alignStart="@+id/Option6"
+        android:layout_alignRight="@+id/Option6"
+        android:layout_alignEnd="@+id/Option6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="हमारे बारे में"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/textView21"
+        android:layout_alignRight="@+id/textView20"
+        android:layout_alignEnd="@+id/textView20"
+        android:layout_below="@+id/textView20"
+        android:layout_alignLeft="@+id/textView20"
+        android:layout_alignStart="@+id/textView20" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Our Government"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/textView22"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textView20"
+        android:layout_above="@+id/textView21"
+        android:layout_below="@+id/Option5"
+        android:layout_toLeftOf="@+id/textView20" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="हमारी सरकार "
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/textView23"
+        android:layout_alignTop="@+id/textView21"
+        android:layout_alignLeft="@+id/Option5"
+        android:layout_alignStart="@+id/Option5"
+        android:layout_alignBottom="@+id/textView21"
+        android:layout_alignRight="@+id/Option5"
+        android:layout_alignEnd="@+id/Option5" />
 
 
 </RelativeLayout>
