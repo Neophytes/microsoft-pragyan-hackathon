@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightCoral"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Choose your avatar ....."
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.07"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boybutton"
+        android:src="@drawable/boy"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/girlbutton"
+        android:src="@drawable/girl"
+        android:layout_alignTop="@+id/boybutton"
+        android:layout_toRightOf="@+id/boybutton"
+        android:layout_toEndOf="@+id/boybutton"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp" />
+
+</RelativeLayout>
