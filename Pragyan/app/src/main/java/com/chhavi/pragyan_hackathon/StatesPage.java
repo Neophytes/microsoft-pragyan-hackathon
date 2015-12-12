@@ -4,9 +4,12 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.support.v7.app.AppCompatActivity;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -45,7 +48,7 @@ public class StatesPage extends AppCompatActivity {
         states.add(new States("Karnataka", "Capital: Bengaluru", "Location: South India", "Chief Minister: Siddaramaiah", "Language(s): Kannada"));
         states.add(new States("Maharashtra", "Capital: Mumbai", "Location: Western India", "Chief Minister: Devendra Fadnavis", "Language(s): Marathi"));
         states.add(new States("Punjab", "Capital: Chandigarh", "Location: Northern India", "Chief Minister: Prakash Singh Badal", "Language(s): Punjabi"));
-        states.add(new States("Assam", "Capital: Dispur", "Location: Eastern India", "hief Minister: Tarun Gogoi", "Language(s): Assamese"));
+        states.add(new States("Assam", "Capital: Dispur", "Location: Eastern India", "Chief Minister: Tarun Gogoi", "Language(s): Assamese"));
 
 
 
@@ -59,15 +62,16 @@ public class StatesPage extends AppCompatActivity {
       //  spinner.setOnItemSelectedListener(this);
 
         final List<String> categories = new ArrayList<String>();
-        categories.add("asfasfaskjf asijfasfljaslkj asijoaskjlddaskjl");
+
+        categories.add("Select your state from this list");
         categories.add("Delhi");
         categories.add("Karnataka");
         categories.add("Maharashtra");
         categories.add("Punjab");
         categories.add("Assam");
-      //  categories.add("Travel");
+
         // Creating adapter for spinner
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, R.layout.spinner_item, categories);
 
         // Drop down layout style - list view with radio button
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

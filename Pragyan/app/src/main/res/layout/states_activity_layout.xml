@@ -4,10 +4,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/rsz_home_bg">
+
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:textColor="@color/lightCoral"
         android:prompt="@string/prompt_user"
         android:layout_below="@+id/tapToSpeak"
         />
