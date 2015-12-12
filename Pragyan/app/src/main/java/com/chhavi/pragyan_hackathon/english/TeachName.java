@@ -1,10 +1,12 @@
 package com.chhavi.pragyan_hackathon.english;
 
 import android.content.ActivityNotFoundException;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -86,7 +88,52 @@ public class TeachName extends AppCompatActivity implements
                     displayName.setText(result.get(0));
                     result_text = result.get(0);
                     if (check.equalsIgnoreCase(result_text)) {
-                        Toast.makeText(TeachName.this, "Hurray!", Toast.LENGTH_LONG).show();
+                        //Toast.makeText(TeachName.this, "Hurray!", Toast.LENGTH_LONG).show();
+                        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+                        alertDialogBuilder.setTitle("HURRAY");
+                        alertDialogBuilder.setMessage("Well Done !\n " +
+                                "You pronounced it correctly :)\n\n" +
+                                "बहुत बढ़िया!\n" +
+                                "आपने इसे सही ढंग से उच्चारितकिया:)");
+
+                        alertDialogBuilder.setCancelable(true);
+
+                        alertDialogBuilder.setPositiveButton("Continue", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                // if this button is clicked, do nothing
+                            }
+                        });
+
+                        alertDialogBuilder.setNegativeButton("जारी रखने के लिए", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                // if this button is clicked, do nothing
+                            }
+                        });
+
+                        alertDialogBuilder.show();
+
+                    }
+                    else{
+                        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+                        alertDialogBuilder.setTitle("OOPS !");
+                        alertDialogBuilder.setMessage("Sorry ! Try again :( \n\n क्षमा करें! पुनः प्रयास करें :(");
+                        alertDialogBuilder.setCancelable(true);
+
+
+                        alertDialogBuilder.setNegativeButton("Again", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                // if this button is clicked, do nothing
+                            }
+                        });
+
+                        alertDialogBuilder.setPositiveButton("पुनः", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                // if this button is clicked, do nothing
+                            }
+                        });
+
+
+                        alertDialogBuilder.show();
                     }
                     break;
                 }

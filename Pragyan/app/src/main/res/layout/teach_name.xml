@@ -54,7 +54,8 @@
         android:layout_gravity="center_horizontal"
         android:src="@drawable/rsz_button"
         android:layout_below="@+id/textView8"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"/>
 
     <ImageView
         android:layout_width="wrap_content"
@@ -86,7 +87,8 @@
         android:src="@drawable/rsz_mic"
         android:layout_alignBottom="@+id/img_avatar"
         android:layout_toRightOf="@+id/img_avatar"
-        android:layout_toEndOf="@+id/img_avatar" />
+        android:layout_toEndOf="@+id/img_avatar"
+        android:background="@android:color/transparent"/>
 
     <TextView
         android:layout_width="wrap_content"
