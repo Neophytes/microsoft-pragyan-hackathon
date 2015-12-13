@@ -2,22 +2,50 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-  >
+    android:background="@drawable/rsz_home_bg"  >
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Imagnine you want to play with your friend but he/she lives far off from your house.          Now imagine there is a tunnel below your house and theirs connecting them.           These tunnels are magical so that you are transported to their place as soon as you step in the tunnel, you can share your toys and talk through this tunnel as well.            Now imagine all your friends and the entire world even has this tunnel below their houses. Internet is that tunnel!"
+        android:layout_height="wrap_content"
+        android:text="@string/internetIntro"
         android:id="@+id/english_text"
-        android:layout_gravity="center_horizontal" />
-    <ImageView
+        android:textStyle="normal"
+        android:textColor="@color/mistyRose"
+        android:textSize="17sp"
+        android:layout_marginTop="65sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/children01_thumb"
-        android:id="@+id/tut_image"
-        android:visibility="gone"
-        android:layout_marginBottom="127dp"
-        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:text="Internet is that tunnel!"
+        android:id="@+id/english_text2"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:textColor="@color/mistyRose"
+        android:layout_marginTop="16sp"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/english_text"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/children01_thumb"
+        android:foregroundGravity="center"
+        android:id="@+id/tut_image"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"/>
+
 </RelativeLayout>

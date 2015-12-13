@@ -54,8 +54,10 @@
         <activity android:name=".AboutUs"/>
 
 
+
         <activity android:name=".panchayat.MainActivity"></activity>
 <activity android:name=".panchayat.GameActivity"></activity>
+
 </application>
 
 </manifest>

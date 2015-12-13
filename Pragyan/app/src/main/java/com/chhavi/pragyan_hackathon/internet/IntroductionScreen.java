@@ -1,5 +1,6 @@
 package com.chhavi.pragyan_hackathon.internet;
 
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import android.view.animation.ScaleAnimation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.chhavi.pragyan_hackathon.AboutUs;
 import com.chhavi.pragyan_hackathon.R;
 
 /**
@@ -21,11 +23,19 @@ public class IntroductionScreen extends AppCompatActivity{
         setContentView(R.layout.internet_introduction_layout);
         ScaleAnimation scaleAnim1 = new ScaleAnimation(0.0f, 1.0f, 0.0f, 1.0f);
         scaleAnim1.setDuration(800);
-        scaleAnim1.setStartOffset(500);
+        scaleAnim1.setStartOffset(3000);
         scaleAnim1.setFillAfter(true);
         //TextView justSpecial = (TextView)findViewById(R.id.just_special_text);
         ImageView justSpecial = (ImageView)findViewById(R.id.tut_image);
         justSpecial.setVisibility(View.VISIBLE);
         justSpecial.setAnimation(scaleAnim1);
+
+        justSpecial.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(IntroductionScreen.this,EmailExplain.class);
+                startActivity(i);
+
+            }
+        });
     }
 }

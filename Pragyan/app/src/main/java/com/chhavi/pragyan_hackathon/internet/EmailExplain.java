@@ -28,7 +28,7 @@ public class EmailExplain extends AppCompatActivity {
         setContentView(R.layout.email_explain);
         final Button startButton = (Button)findViewById(R.id.start_button);
         final TextPaint titlePaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
-        titlePaint.setColor(this.getResources().getColor(R.color.colorPrimaryDark, getTheme()));
+        //titlePaint.setColor(this.getResources().getColor(R.color.colorPrimaryDark, getTheme()));
         titlePaint.setTextSize(44.0f);
 
          showcaseView = new ShowcaseView.Builder(this)

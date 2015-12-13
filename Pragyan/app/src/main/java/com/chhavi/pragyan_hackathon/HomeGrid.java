@@ -53,7 +53,8 @@ public class HomeGrid extends AppCompatActivity{
         internetOption.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(HomeGrid.this, EmailExplain.class);
+                //Intent i = new Intent(HomeGrid.this, EmailExplain.class);
+                Intent i = new Intent(HomeGrid.this, IntroductionScreen.class);
                 startActivity(i);
 
             }

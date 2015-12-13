@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">Sahayak</string>
     <string name="prompt_user">Choose State</string>
+
     <string name="gallows">The Gallows</string><string name="head">The Head</string><string name="body">The Body</string><string name="arm">An Arm</string><string name="leg">A Leg</string>
+
+    <string name="internetIntro">
+        \nImagnine you want to play with your friend but he/she lives far off from your house.
+        \nNow imagine there is a tunnel below your house and theirs connecting them.
+        \nThese tunnels are magical so that you are transported to their place as soon as you step in the tunnel, you can share your toys and talk through this tunnel as well.
+        \nNow imagine all your friends and the entire world even has this tunnel below their houses.</string>
+
 </resources>
