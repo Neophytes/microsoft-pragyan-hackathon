@@ -2,22 +2,33 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="#FF000000"
-
+	android:background="#55CDB5CD"
 	tools:context=".MainActivity" >
 
 	<ImageView
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_centerInParent="true"
-		android:src="@drawable/android_hangman_bg" />
+		android:src="@drawable/panch"
+		android:background="@android:color/transparent"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:id="@+id/imageView" />
 
 	<Button
 		android:id="@+id/playBtn"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_centerInParent="true"
-		android:text="Play"
-		android:textColor="#FFFF0000" />
+		android:text="@string/startbutton"
+		android:background="@color/colorPrimaryDark"
+		android:textStyle="bold"
+		android:textColor="@color/mistyRose"
+		android:layout_marginLeft="20sp"
+		android:layout_marginRight="20sp"
+		android:layout_below="@+id/imageView"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true" />
 
 </RelativeLayout>

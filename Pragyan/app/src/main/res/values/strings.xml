@@ -4,6 +4,8 @@
 
     <string name="gallows">The Gallows</string><string name="head">The Head</string><string name="body">The Body</string><string name="arm">An Arm</string><string name="leg">A Leg</string>
 
+    <string name="startbutton">Start.\nप्रारंभ</string>
+
     <string name="internetIntro">
         \nImagnine you want to play with your friend but he/she lives far off from your house.
         \nNow imagine there is a tunnel below your house and theirs connecting them.

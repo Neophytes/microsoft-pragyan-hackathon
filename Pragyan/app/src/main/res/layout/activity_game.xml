@@ -12,7 +12,10 @@
 		android:layout_height="wrap_content"
 		android:background="#FFFFFFFF"
 		android:gravity="center"
-		android:paddingTop="15dp" >
+		android:paddingTop="15sp"
+		android:layout_marginTop="30sp"
+		android:layout_marginRight="20sp"
+		android:layout_marginLeft="20sp">
 
 		<ImageView
 			android:layout_width="wrap_content"
@@ -20,7 +23,7 @@
 			android:contentDescription="@string/gallows"
 			android:paddingLeft="0dp"
 			android:paddingTop="0dp"
-			android:src="@drawable/android_hangman_gallows" />
+			android:src="@drawable/android_hangman_gallows"/>
 
 		<ImageView
 			android:id="@+id/head"
@@ -87,7 +90,9 @@
 		android:background="#FFFFFFFF"
 		android:gravity="center"
 		android:orientation="horizontal"
-		android:padding="10dp" >
+		android:padding="10dp"
+		android:layout_marginRight="20sp"
+		android:layout_marginLeft="20sp">
 	</LinearLayout>
 
 	<!-- letters -->
@@ -96,10 +101,11 @@
 		android:layout_height="50dp"
 		android:text="Hints"
 		android:gravity="center"
-		android:textSize="25sp"
+		android:textSize="17sp"
 		android:layout_marginTop="20dp"
 		android:textColor="@color/white"
 		android:id="@+id/hintText"
+		android:foregroundGravity="center"
 		android:layout_gravity="center_horizontal" />
 
 	<GridView
@@ -113,6 +119,8 @@
 		android:numColumns="7"
 		android:padding="5dp"
 		android:stretchMode="columnWidth"
-		android:verticalSpacing="5dp" />
+		android:verticalSpacing="5dp"
+		android:layout_marginRight="20sp"
+		android:layout_marginLeft="20sp"/>
 
 </LinearLayout>
