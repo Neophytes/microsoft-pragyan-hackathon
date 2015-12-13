@@ -26,12 +26,12 @@ public class SplashScreen extends Activity {
         setContentView(R.layout.splash_screen);
 
         ScaleAnimation scaleAnim1 = new ScaleAnimation(0.0f, 1.0f, 0.0f, 1.0f);
-        scaleAnim1.setDuration(500);
+        scaleAnim1.setDuration(2000);
         scaleAnim1.setStartOffset(400);
         scaleAnim1.setFillAfter(true);
 
         ScaleAnimation scaleAnim12 = new ScaleAnimation(0.0f, 1.0f, 0.0f, 1.0f);
-        scaleAnim12.setDuration(800);
+        scaleAnim12.setDuration(2000);
         scaleAnim12.setStartOffset(900);
 
         //TextView justSpecial = (TextView)findViewById(R.id.just_special_text);
@@ -70,7 +70,7 @@ public class SplashScreen extends Activity {
                 try {
                     synchronized(this){
                         // Wait given period of time or exit on touch
-                        wait(2500);
+                        wait(4500);
                     }
                 }
                 catch(InterruptedException ex){
