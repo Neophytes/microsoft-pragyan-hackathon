@@ -1,6 +1,7 @@
 package com.chhavi.pragyan_hackathon.internet;
 
 import android.app.ExpandableListActivity;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Paint;
 import android.os.Bundle;
@@ -56,7 +57,7 @@ public class EmailExplain extends AppCompatActivity {
                   //  showcaseView.show();
                     flag = 1;
                    // showcaseView.setShowcase(new ViewTarget(body),true);
-                }else{
+                }else if(flag == 1){
                     showcaseView = new ShowcaseView.Builder(EmailExplain.this)
                             .withNewStyleShowcase()
                             .setTarget(new ViewTarget(R.id.body_text, EmailExplain.this))
@@ -65,6 +66,10 @@ public class EmailExplain extends AppCompatActivity {
                             .setStyle(R.style.CustomShowcaseTheme2)
                             .build();
                     showcaseView.show();
+                    flag = 2;
+                }else{
+                    Intent i = new Intent(EmailExplain.this, SearchExplain.class);
+                    startActivity(i);
                 }
 
             }
