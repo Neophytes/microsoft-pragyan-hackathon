@@ -80,7 +80,7 @@ public class SplashScreen extends Activity {
 
                 // Run next activity
                 Intent intent = new Intent();
-                intent.setClass(sPlashScreen, ChooseAvatar.class);
+                intent.setClass(sPlashScreen, AppIntroMine.class);
                 startActivity(intent);
                 //    stop();
             }
