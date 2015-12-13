@@ -16,4 +16,57 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:layout_gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:id="@+id/imageView1"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/rsz_ow"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:layout_width="400sp"
+        android:layout_height="100sp"
+        android:id="@+id/imageView2"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/sah"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="italic"
+        android:textColor="@color/lightCoral"
+        android:gravity="center"
+        android:text="v 0.0.1"
+        android:id="@+id/textView28"
+        android:layout_gravity="right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:layout_marginTop="20sp"
+        android:textSize="20sp"
+        android:text="For more information, kindly visit............"
+        android:id="@+id/textView29"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="20sp"
+        android:textSize="20sp"
+        android:text="Made with ♥ for India, in India. "
+        android:id="@+id/textView30"
+        android:layout_gravity="center_horizontal" />
+
 </LinearLayout>
