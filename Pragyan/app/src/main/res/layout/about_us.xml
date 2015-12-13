@@ -45,19 +45,7 @@
         android:id="@+id/textView28"
         android:layout_gravity="right" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textStyle="italic"
-        android:textColor="@color/white"
-        android:layout_marginTop="20sp"
-        android:textSize="20sp"
-        android:text="For more information, kindly visit............"
-        android:id="@+id/textView29"
-        android:layout_gravity="center_horizontal" />
-
-    <TextView
+        <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
@@ -67,6 +55,17 @@
         android:textSize="20sp"
         android:text="Made with ♥ for India, in India. "
         android:id="@+id/textView30"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="32sp"
+        android:text="http://neophytes.github.io/microsoft-pragyan-hackathon/"
+        android:autoLink="web"
+        android:textStyle="italic"
+        android:id="@+id/textView31"
         android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
