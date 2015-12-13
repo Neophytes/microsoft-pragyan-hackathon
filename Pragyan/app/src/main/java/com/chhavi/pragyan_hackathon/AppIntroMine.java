@@ -18,15 +18,15 @@ public class AppIntroMine extends com.github.paolorotolo.appintro.AppIntro {
         addSlide(second_fragment);
         addSlide(third_fragment);
         addSlide(fourth_fragment);*/
-        setBarColor(getResources().getColor(R.color.colorAccent));
+        setBarColor(getResources().getColor(R.color.colorPrimary));
 
         //  com.github.paolorotolo.appintro.AppIntro.showSkipButton(true);
         // Instead of fragments, you can also use our default slide
         // Just set a title, description, background and image. AppIntro will do the rest
-        addSlide(AppIntroFragment.newInstance("Example", "sasdaas", R.drawable.rsz_ss2, getResources().getColor(R.color.lightCoral)));
-        addSlide(AppIntroFragment.newInstance("Example", "sasdaas", R.drawable.ss3, getResources().getColor(R.color.lightCoral)));
-        addSlide(AppIntroFragment.newInstance("Example", "sasdaas", R.drawable.ss1, getResources().getColor(R.color.lightCoral)));
-        addSlide(AppIntroFragment.newInstance("Example", "sasdaas", R.drawable.ss4, getResources().getColor(R.color.lightCoral)));
+        addSlide(AppIntroFragment.newInstance("Welcome !", getResources().getString(R.string.homedesc), R.drawable.rsz_ss2, getResources().getColor(R.color.colorPrimaryDark)));
+        addSlide(AppIntroFragment.newInstance("Don't let him hang !", getResources().getString(R.string.hangmandesc), R.drawable.ss3, getResources().getColor(R.color.black)));
+        addSlide(AppIntroFragment.newInstance("Speak and Learn !", getResources().getString(R.string.spklrn), R.drawable.ss1, getResources().getColor(R.color.colorPrimaryDark)));
+        addSlide(AppIntroFragment.newInstance("Follow me !", getResources().getString(R.string.insdesc), R.drawable.ss4, getResources().getColor(R.color.lavender)));
 
         // OPTIONAL METHODS
         // Override bar/separator color

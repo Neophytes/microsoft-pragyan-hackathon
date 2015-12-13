@@ -57,7 +57,10 @@
 
         <activity android:name=".panchayat.MainActivity"></activity>
 <activity android:name=".panchayat.GameActivity"></activity>
-        <activity android:name=".AppIntroMine"></activity>
+        <activity
+            android:name=".AppIntroMine"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            ></activity>
 
 
 

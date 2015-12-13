@@ -12,4 +12,12 @@
         \nThese tunnels are magical so that you are transported to their place as soon as you step in the tunnel, you can share your toys and talk through this tunnel as well.
         \nNow imagine all your friends and the entire world even has this tunnel below their houses.</string>
 
+    <string name="homedesc">यह हमारा घर स्क्रीन है। यह विकल्प की एक किस्म प्रदान करता है और एक शैक्षिक अनुभव का वादा किया।</string>
+    <string name="hangmandesc">यह खेल पंचायत के बारे में जानने के लिए एक मजेदार तरीका प्रदान करता है</string>
+    <string name="spklrn">माइक दबाएेॱ अौर बोलना सीखेॱअौर  अपने आप का परीक्षण करें</string>
+    <string name="insdesc">जानने के लिए निर्देशों का पालन करें</string>
+
+    <string name="ratan">Ratan\nरतन </string>
+    <string name="lata">Lata\nलता</string>
+
 </resources>
