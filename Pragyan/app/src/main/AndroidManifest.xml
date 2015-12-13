@@ -49,6 +49,9 @@
         <activity android:name=".internet.SearchExplain"></activity>
         <activity android:name=".AboutUs"/>
 
+
+        <activity android:name=".panchayat.MainActivity"></activity>
+<activity android:name=".panchayat.GameActivity"></activity>
 </application>
 
 </manifest>

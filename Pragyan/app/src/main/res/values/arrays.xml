@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="words">
+		<item>ZILAPARISHAD</item>
+		<item>Gandhi Ji</item>
+		<item>FIVE</item>
+		<item>GRAMSABHA</item>
+		<item>PANCH</item>
+		<item>SARPANCH</item>
+
+	</string-array>
+
+	<string-array name="hints">
+		<item>Highest Body of Panchayati Raj</item>
+		<item>Panchayat System was the dream of this person</item>
+		<item>Elections are held after every __ years</item>
+		<item>Who votes for a Panchayat</item>
+		<item>Leaders of a Gram Sabha</item>
+		<item>Leader of Panchayat</item>
+
+	</string-array>
+
+</resources>

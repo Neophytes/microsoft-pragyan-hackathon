@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 import com.chhavi.pragyan_hackathon.english.hello_screen;
 import com.chhavi.pragyan_hackathon.internet.EmailExplain;
 import com.chhavi.pragyan_hackathon.internet.IntroductionScreen;
+import com.chhavi.pragyan_hackathon.panchayat.MainActivity;
 import com.chhavi.pragyan_hackathon.world.WorldMap;
 
 /**
@@ -20,6 +21,7 @@ public class HomeGrid extends AppCompatActivity{
     private ImageButton internetOption;
     private ImageButton englishOption;
     private ImageButton aboutUsOption;
+    private ImageButton govtOption;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class HomeGrid extends AppCompatActivity{
         internetOption = (ImageButton)findViewById(R.id.internetOption);
         englishOption = (ImageButton)findViewById(R.id.englishOption);
         aboutUsOption = (ImageButton)findViewById(R.id.Option6);
+        govtOption = (ImageButton)findViewById(R.id.Option5);
 
 
         indiaOption.setOnClickListener(new View.OnClickListener() {
@@ -68,6 +71,13 @@ public class HomeGrid extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(HomeGrid.this, WorldMap.class);
+                startActivity(i);
+            }
+        });
+        govtOption.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(HomeGrid.this, MainActivity.class);
                 startActivity(i);
             }
         });
