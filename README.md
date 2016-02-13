@@ -20,4 +20,5 @@ Made with ❤ for the progress towards a stronger `Digital India` by @neophytes 
 ###Current App
 [![Sahayak](http://img.youtube.com/vi/b7GgFWvQuAE/0.jpg)](http://www.youtube.com/watch?v=b7GgFWvQuAE)
 
-Link: http://www.youtube.com/watch?v=b7GgFWvQuAE
+- [App Video](http://www.youtube.com/watch?v=b7GgFWvQuAE)
+- [App Presentation](https://github.com/Neophytes/microsoft-pragyan-hackathon/blob/master/Presentation.pdf)
